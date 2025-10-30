@@ -8,7 +8,7 @@ import env from "./env";
 export const auth = betterAuth({
   hooks: {
     after: createAuthMiddleware(async (ctx) => {
-      if (ctx.path === "/get-session") {
+      if (ctx.path === "/api/auth/get-session") {
         if (!ctx.context.session) {
           return ctx.json({
             session: null,
