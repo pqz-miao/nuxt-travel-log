@@ -19,7 +19,7 @@ function toggleSidebar() {
         :class="{ 'justify-center': !isSidebarOpen, 'justify-end': isSidebarOpen }"
         @click="toggleSidebar"
       >
-        <div class="flex items-center justify-centercursor-pointer hover:bg-base-300 rounded-lg size-8">
+        <div class="flex items-center justify-center cursor-pointer hover:bg-base-300 rounded-lg size-8">
           <Icon
             v-if="isSidebarOpen"
             name="tabler:chevron-left"
@@ -54,8 +54,8 @@ function toggleSidebar() {
         />
       </div>
     </div>
-    <div class="flex-1 bg-amber-300">
-      Main View
+    <div class="flex-1">
+      <NuxtPage />
     </div>
   </div>
 </template>
