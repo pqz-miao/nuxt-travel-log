@@ -40,6 +40,12 @@ export async function findUniqueSlug(slug: string) {
   return slug;
 };
 
+export async function getLocations(userId: number) {
+  return db.query.location.findMany({
+    where: eq(location.userId, userId),
+  });
+};
+
 export async function insertLocation(newLocation: InsertLocation, slug: string, userId: number) {
   const [created] = await db.insert(location).values({
     ...newLocation,
