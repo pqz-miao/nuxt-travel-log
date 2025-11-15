@@ -1,4 +1,4 @@
-import type { UserWithId } from "~/utils/auth";
+import type { UserWithId } from "~~/server/utils/auth";
 
 declare module "h3" {
   // eslint-disable-next-line ts/consistent-type-definitions

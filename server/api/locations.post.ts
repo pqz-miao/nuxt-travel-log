@@ -1,9 +1,8 @@
 import type { DrizzleError } from "drizzle-orm";
 
+import { findLocationByName, findUniqueSlug, insertLocation } from "~~/server/utils/db/queries/locations";
+import { insertLocationSchema } from "~~/server/utils/db/schemas";
 import slugify from "slug";
-
-import { findLocationByName, findUniqueSlug, insertLocation } from "~/utils/db/queries/locations";
-import { insertLocationSchema } from "~/utils/db/schemas";
 
 import defineAuthenticatedEventHandler from "../utils/define-authenticated-event-handler";
 

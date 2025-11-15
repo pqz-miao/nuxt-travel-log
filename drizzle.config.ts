@@ -4,8 +4,8 @@ import { defineConfig } from "drizzle-kit";
 import env from "./app/utils/env";
 
 export default defineConfig({
-  out: "./app/utils/db/migrations",
-  schema: "./app/utils/db/schemas/index.ts",
+  out: "./server/utils/db/migrations",
+  schema: "./server/utils/db/schemas/index.ts",
   casing: "snake_case",
   dialect: "turso",
   dbCredentials: {

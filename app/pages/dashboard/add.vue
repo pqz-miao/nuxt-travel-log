@@ -2,8 +2,7 @@
 import type { FetchError } from "ofetch";
 
 import { toTypedSchema } from "@vee-validate/zod";
-
-import { insertLocationSchema } from "~/utils/db/schemas";
+import { insertLocationSchema } from "~~/server/utils/db/schemas";
 
 const { $csrfFetch } = useNuxtApp();
 const router = useRouter();

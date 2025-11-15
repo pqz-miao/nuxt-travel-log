@@ -1,4 +1,4 @@
-import { getLocations } from "~/utils/db/queries/locations";
+import { getLocations } from "~~/server/utils/db/queries/locations";
 
 import defineAuthenticatedEventHandler from "../utils/define-authenticated-event-handler";
 
