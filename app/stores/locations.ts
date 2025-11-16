@@ -7,7 +7,6 @@ export const useLocationsStore = defineStore("useLocationsStore", () => {
 
   watchEffect(() => {
     if (data.value) {
-      sidebarStore.loading = false;
       sidebarStore.sidebarItems = data.value.map(location => ({
         id: `location-${location.id}`,
         label: location.name,

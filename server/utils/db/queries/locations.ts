@@ -41,7 +41,6 @@ export async function findUniqueSlug(slug: string) {
 };
 
 export async function getLocations(userId: number) {
-  await new Promise(resolve => setTimeout(resolve, 2000)); // Simulate delay
   return db.query.location.findMany({
     where: eq(location.userId, userId),
   });
